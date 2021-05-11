@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="358px" preserveAspectRatio="none" style="width:204px;height:358px;" version="1.1" viewBox="0 0 204 358" width="204px" zoomAndPan="magnify"><defs><filter height="300%" id="f1uj4df1t6hiur" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="180" x="12" y="26.708">論理設計の４つのタスク</text><ellipse cx="102.5" cy="40.9531" fill="#000000" filter="url(#f1uj4df1t6hiur)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#FFFFFF" filter="url(#f1uj4df1t6hiur)" height="244.1719" style="stroke: #000000; stroke-width: 2.0;" width="147" x="29" y="61.7549"/><path d="M118,62.7549 L118,71.0518 L108,81.0518 L29,81.0518 " fill="none" style="stroke: #000000; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="79" x="32" y="75.75">Initialization</text><rect fill="#FEFECE" filter="url(#f1uj4df1t6hiur)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="127" x="39" y="98.0518"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="107" x="49" y="119.1904">1.エンティティの抽出</text><rect fill="#FEFECE" filter="url(#f1uj4df1t6hiur)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="127" x="39" y="152.0205"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="107" x="49" y="173.1592">2.エンティティの定義</text><rect fill="#FEFECE" filter="url(#f1uj4df1t6hiur)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="68" x="68.5" y="205.9893"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48" x="78.5" y="227.1279">3.正規化</text><rect fill="#FEFECE" filter="url(#f1uj4df1t6hiur)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="96" x="54.5" y="259.958"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="76" x="64.5" y="281.0967">4.ER図の作成</text><ellipse cx="102.5" cy="336.9268" fill="#FFFFFF" filter="url(#f1uj4df1t6hiur)" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><ellipse cx="102.5" cy="336.9268" fill="#000000" rx="6" ry="6" style="stroke: #7F7F7F; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="102.5" x2="102.5" y1="132.0205" y2="152.0205"/><polygon fill="#A80036" points="98.5,142.0205,102.5,152.0205,106.5,142.0205,102.5,146.0205" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="102.5" x2="102.5" y1="185.9893" y2="205.9893"/><polygon fill="#A80036" points="98.5,195.9893,102.5,205.9893,106.5,195.9893,102.5,199.9893" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="102.5" x2="102.5" y1="239.958" y2="259.958"/><polygon fill="#A80036" points="98.5,249.958,102.5,259.958,106.5,249.958,102.5,253.958" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="102.5" x2="102.5" y1="50.9531" y2="98.0518"/><polygon fill="#A80036" points="98.5,88.0518,102.5,98.0518,106.5,88.0518,102.5,92.0518" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="102.5" x2="102.5" y1="293.9268" y2="325.9268"/><polygon fill="#A80036" points="98.5,315.9268,102.5,325.9268,106.5,315.9268,102.5,319.9268" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+title 論理設計の４つのタスク
+
+start
+partition Initialization {
+:1.エンティティの抽出;
+:2.エンティティの定義;
+:3.正規化;
+:4.ER図の作成;
+}
+stop
+
+@enduml
+
+PlantUML version 1.2019.03(Sun Mar 10 11:04:44 UTC 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-8u212-b01-1~deb9u1-b01
+Operating System: Linux
+OS Version: 5.10.25-linuxkit
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

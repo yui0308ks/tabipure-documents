@@ -7,6 +7,7 @@ services:
     image: hero/gitbook:1.0.0
     volumes:
       - ./gitbook:/gitbook
+      - ./docs:/gitbook_dest
       - plugins:/gitbook/node_modules
     ports:
       - 4000:4000
