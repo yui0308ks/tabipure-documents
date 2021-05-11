@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="122px" preserveAspectRatio="none" style="width:467px;height:122px;" version="1.1" viewBox="0 0 467 122" width="467px" zoomAndPan="magnify"><defs><filter height="300%" id="f1mtmdi8tp9d8u" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="144" x="164.5" y="16.708">システムのサイクル</text><!--entity user--><ellipse cx="32.5" cy="38.9531" fill="#FEFECE" filter="url(#f1mtmdi8tp9d8u)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M32.5,46.9531 L32.5,73.9531 M19.5,54.9531 L45.5,54.9531 M32.5,73.9531 L19.5,88.9531 M32.5,73.9531 L45.5,88.9531 " fill="none" filter="url(#f1mtmdi8tp9d8u)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="53" x="6" y="108.9482">ユーザー</text><!--entity user2--><ellipse cx="428.5" cy="38.9531" fill="#FEFECE" filter="url(#f1mtmdi8tp9d8u)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M428.5,46.9531 L428.5,73.9531 M415.5,54.9531 L441.5,54.9531 M428.5,73.9531 L415.5,88.9531 M428.5,73.9531 L441.5,88.9531 " fill="none" filter="url(#f1mtmdi8tp9d8u)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="53" x="402" y="108.9482">ユーザー</text><!--entity DBMS--><path d="M121.5,57.9531 C121.5,47.9531 152.5,47.9531 152.5,47.9531 C152.5,47.9531 183.5,47.9531 183.5,57.9531 L183.5,83.25 C183.5,93.25 152.5,93.25 152.5,93.25 C152.5,93.25 121.5,93.25 121.5,83.25 L121.5,57.9531 " fill="#FEFECE" filter="url(#f1mtmdi8tp9d8u)" style="stroke: #000000; stroke-width: 1.5;"/><path d="M121.5,57.9531 C121.5,67.9531 152.5,67.9531 152.5,67.9531 C152.5,67.9531 183.5,67.9531 183.5,57.9531 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="42" x="131.5" y="84.9482">DBMS</text><ellipse cx="343.299" cy="70.4768" fill="#FEFECE" filter="url(#f1mtmdi8tp9d8u)" rx="22.799" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="329.299" y="75.1252">情報</text><!--link user to DBMS--><path d="M59.1319,70.4531 C75.9205,70.4531 97.8197,70.4531 116.19,70.4531 " fill="none" id="user-DBMS" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="121.27,70.4531,112.27,66.4531,116.27,70.4531,112.27,74.4531,121.27,70.4531" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="26" x="77.25" y="63.52">登録</text><!--link DBMS to 情報--><path d="M183.613,70.4531 C220.085,70.4531 280.01,70.4531 315.215,70.4531 " fill="none" id="DBMS-情報" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="320.224,70.4531,311.224,66.4531,315.224,70.4531,311.224,74.4531,320.224,70.4531" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="100" x="202" y="63.52">抽出(観点や文脈)</text><!--link 情報 to user2--><path d="M366.742,70.4531 C376.74,70.4531 386.738,70.4531 396.735,70.4531 " fill="none" id="情報-user2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="401.963,70.4531,392.963,66.4531,396.963,70.4531,392.963,74.4531,401.963,70.4531" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+title システムのサイクル
+
+skinparam ParticipantPadding 10
+skinparam BoxPadding 10
+
+actor "ユーザー" as user
+actor "ユーザー" as user2
+database "DBMS"
+
+    user -> DBMS: 登録
+    DBMS -> (情報): 抽出(観点や文脈)
+    (情報) -> user2
+
+@enduml
+
+PlantUML version 1.2019.03(Sun Mar 10 11:04:44 UTC 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-8u212-b01-1~deb9u1-b01
+Operating System: Linux
+OS Version: 5.10.25-linuxkit
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
