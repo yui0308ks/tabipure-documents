@@ -13,7 +13,6 @@
     * [API設計](10_requirement/studying/apiDesign/apiDesign.md)
     * [SpringSecurity](10_requirement/studying/springSecurity/springSecurity.md)
 
-
 ## Domain
 * [DDD](20_Domain/domain.md)
 
