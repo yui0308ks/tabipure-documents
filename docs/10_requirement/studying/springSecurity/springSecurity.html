@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>API設計 · YOUR BOOK TITLE</title>
+        <title>SpringSecurity · YOUR BOOK TITLE</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../springSecurity/springSecurity.html" />
+    <link rel="next" href="../../../20_Domain/domain.html" />
     
     
-    <link rel="prev" href="../dddCleanArchitecture/dddCleanArchitecture.html" />
+    <link rel="prev" href="../apiDesign/apiDesign.html" />
     
 
     </head>
@@ -209,9 +209,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.7" data-path="apiDesign.html">
+        <li class="chapter " data-level="2.1.7" data-path="../apiDesign/apiDesign.html">
             
-                <a href="apiDesign.html">
+                <a href="../apiDesign/apiDesign.html">
             
                     
                     API設計
@@ -222,9 +222,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.8" data-path="../springSecurity/springSecurity.html">
+        <li class="chapter active" data-level="2.1.8" data-path="springSecurity.html">
             
-                <a href="../springSecurity/springSecurity.html">
+                <a href="springSecurity.html">
             
                     
                     SpringSecurity
@@ -342,7 +342,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >API設計</a>
+        <a href="../../.." >SpringSecurity</a>
     </h1>
 </div>
 
@@ -359,10 +359,11 @@
                                 
                                 <!-- TOC -->
 <ul>
-<li><a href="#apiDesign">apiDesign</a></li>
+<li><a href="#SpringSecurity">SpringSecurity</a></li>
 </ul>
 <!-- /TOC -->
-<h4 id="apidesign"><a name="apidesign" class="plugin-anchor" href="#apidesign"><i class="fa fa-link" aria-hidden="true"></i></a>apiDesign</h4>
+<h3 id="springsecurity"><a name="springsecurity" class="plugin-anchor" href="#springsecurity"><i class="fa fa-link" aria-hidden="true"></i></a>SpringSecurity</h3>
+<p>Spring Security&#x306F;&#x3001;Spring Framework&#x306E;&#x4E2D;&#x3067;&#x300C;&#x8A8D;&#x8A3C;&#x300D;&#x3068;&#x300C;&#x8A8D;&#x53EF;&#x300D;&#x3068;&#x3044;&#x3063;&#x305F;&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6A5F;&#x80FD;&#x3092;&#x63D0;&#x4F9B;&#x3057;&#x3066;&#x304F;&#x308C;&#x308B;&#x4ED5;&#x7D44;&#x307F;&#x306E;&#x3088;&#x3046;&#x3067;&#x3059;&#x3002;<br><br>&#x3053;&#x308C;&#x3092;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x3067;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x6A5F;&#x80FD;&#x3084;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x5236;&#x5FA1;&#x3068;&#x3044;&#x3063;&#x305F;&#x3053;&#x3068;&#x304C;&#x7C21;&#x5358;&#x306B;&#x5B9F;&#x88C5;&#x3067;&#x304D;&#x308B;&#x3002;<br><br>&#x8A8D;&#x8A3C;&#x306F;&#x82F1;&#x8A9E;&#x3067;Authentication&#x3001;&#x300C;&#x8A3C;&#x3092;&#x8A8D;&#x3081;&#x308B;&#x300D;<br><br>&#x5BFE;&#x8C61;&#x304C;&#x3060;&#x308C;&#x306A;&#x306E;&#x304B;&#xFF1F;&#x3069;&#x306E;&#x3088;&#x3046;&#x306A;&#x3082;&#x306E;&#x306A;&#x306E;&#x304B;&#xFF1F;&#x3092;&#x4F55;&#x304B;&#x3057;&#x3089;&#x306E;&#x300C;&#x8A3C;&#x300D;&#x3092;&#x57FA;&#x306B;&#x8A8D;&#x3081;&#x308B;&#x3053;&#x3068;&#x3002;<br><br>&#x8A8D;&#x53EF;&#x306F;Authorization&#x3001;&#x3067;&#x304D;&#x308B;&#x3053;&#x3068;&#xFF08;&#x53EF;&#xFF09;&#x3092;&#x8A8D;&#x3081;&#x308B;&#x300D;<br><br>&#x99C5;&#x306E;&#x6539;&#x672D;&#x3092;&#x901A;&#x308B;&#x306B;&#x306F;&#x5207;&#x7B26;&#x304C;&#x5FC5;&#x8981;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3088;&#x306D;&#xFF1F;&#xFF08;&#x7121;&#x4EBA;&#x99C5;&#x3068;&#x304B;&#x77E5;&#x3089;&#x3093;&#xFF09;&#x3064;&#x307E;&#x308A;&#x5207;&#x7B26;&#x304C;&#x3042;&#x308C;&#x3070;&#x6539;&#x672D;&#x3092;&#x901A;&#x308B;&#x3053;&#x3068;&#x304C;&#x8A8D;&#x3081;&#x3089;&#x308C;&#x3001;&#x306A;&#x3051;&#x308C;&#x3070;&#x901A;&#x308B;&#x3053;&#x3068;&#x304C;&#x8A8D;&#x3081;&#x3089;&#x308C;&#x306A;&#x3044;<br><br>&#x3064;&#x307E;&#x308A;&#x8A8D;&#x53EF;&#x3068;&#x306F;&#x6A29;&#x9650;&#x3092;&#x57FA;&#x306B;&#x884C;&#x52D5;&#x3092;&#x8A8D;&#x3081;&#x308B;&#x3053;&#x3068;</p>
 
                                 
                                 </section>
@@ -390,12 +391,12 @@
 
             
                 
-                <a href="../dddCleanArchitecture/dddCleanArchitecture.html" class="navigation navigation-prev " aria-label="Previous page: DDD">
+                <a href="../apiDesign/apiDesign.html" class="navigation navigation-prev " aria-label="Previous page: API設計">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../springSecurity/springSecurity.html" class="navigation navigation-next " aria-label="Next page: SpringSecurity">
+                <a href="../../../20_Domain/domain.html" class="navigation navigation-next " aria-label="Next page: DDD">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -406,7 +407,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"API設計","level":"2.1.7","depth":2,"next":{"title":"SpringSecurity","level":"2.1.8","depth":2,"path":"10_requirement/studying/springSecurity/springSecurity.md","ref":"10_requirement/studying/springSecurity/springSecurity.md","articles":[]},"previous":{"title":"DDD","level":"2.1.6","depth":2,"path":"10_requirement/studying/dddCleanArchitecture/dddCleanArchitecture.md","ref":"10_requirement/studying/dddCleanArchitecture/dddCleanArchitecture.md","articles":[]},"dir":"ltr"},"config":{"plugins":["lb2br","plantuml-cloud","-sharing","hide-published-with","footnote-string-to-number","anchors","image-captions"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"footnote-string-to-number":{},"lb2br":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"plantuml-cloud":{"protocol":"http","host":"plantuml","port":1608,"blockRegex":"^```p?uml((.*[\r\n])+?)?```$"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"image-captions":{"caption":"Fig. _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"YOUR BOOK TITLE","language":"ja","gitbook":"*"},"file":{"path":"10_requirement/studying/apiDesign/apiDesign.md","mtime":"2021-05-08T07:43:23.940Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-16T14:55:26.350Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SpringSecurity","level":"2.1.8","depth":2,"next":{"title":"DDD","level":"3.1","depth":1,"path":"20_Domain/domain.md","ref":"20_Domain/domain.md","articles":[]},"previous":{"title":"API設計","level":"2.1.7","depth":2,"path":"10_requirement/studying/apiDesign/apiDesign.md","ref":"10_requirement/studying/apiDesign/apiDesign.md","articles":[]},"dir":"ltr"},"config":{"plugins":["lb2br","plantuml-cloud","-sharing","hide-published-with","footnote-string-to-number","anchors","image-captions"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"footnote-string-to-number":{},"lb2br":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"plantuml-cloud":{"protocol":"http","host":"plantuml","port":1608,"blockRegex":"^```p?uml((.*[\r\n])+?)?```$"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"image-captions":{"caption":"Fig. _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"YOUR BOOK TITLE","language":"ja","gitbook":"*"},"file":{"path":"10_requirement/studying/springSecurity/springSecurity.md","mtime":"2021-05-16T13:07:24.110Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-16T14:55:26.350Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
