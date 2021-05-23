@@ -12,6 +12,7 @@
     * [DDD](10_requirement/studying/dddCleanArchitecture/dddCleanArchitecture.md)
     * [API設計](10_requirement/studying/apiDesign/apiDesign.md)
     * [SpringSecurity](10_requirement/studying/springSecurity/springSecurity.md)
+    * [settlement](10_requirement/studying/settlement/settlement.md)
 
 ## Domain
 * [DDD](20_Domain/domain.md)
