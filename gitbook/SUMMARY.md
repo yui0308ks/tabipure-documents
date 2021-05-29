@@ -19,4 +19,5 @@
 ## Design
 * [基本設計](30_design/bd/index.md)
     * [概念](30_design/bd/concept.md)
+    * [ER図](30_design/bd/erFigure.md)
 * [詳細設計](30_design/dd/index.md)
